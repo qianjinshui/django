@@ -1,0 +1,17 @@
+<input type="button" onclick="myfunction()" value="click me">
+
+<script>
+
+        var clickTimes = 0;
+        function myfunction()
+        {
+            clickTimes = clickTimes+1;
+            var x = "";
+            for (var i=0; i<clickTimes; i++)
+            {
+                  x= x + "该数字为 " + i + "<br>";
+            }
+            document.getElementById("test1").innerHTML=x;
+        }
+
+</script>
